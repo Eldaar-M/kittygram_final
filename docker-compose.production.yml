@@ -15,7 +15,7 @@ services:
     image: eldarm/kittygram_backend
     env_file: .env
     volumes:
-      - static:/backend_static
+      - static:/backend_static/static/
       - media:/app/media/
     depends_on:
       - db
