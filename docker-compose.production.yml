@@ -12,18 +12,23 @@ services:
     volumes:
       - pg_data:/var/lib/postgresql/data
   backend:
+    image: eldarm/kittygram_backend
     build: ./backend/
     env_file: .env
     volumes:
       - static:/backend_static
       - media:/app/media/
+    depends_on:
+      - db
   frontend:
+    image: eldarm/kittygram_frontend
     env_file: .env
     build: ./frontend/
     command: cp -r /app/build/. /static/
     volumes:
       - static:/static
   gateway:
+    image: eldarm/kittygram_gateway
     build: ./nginx/
     env_file: .env
     ports:
