@@ -1,3 +1,4 @@
+![workflow](https://github.com/Eldaar-M/kittygram_final/actions/workflows/main.yml/badge.svg)
 # Описание проекта Kittygram
 
 Kittygram — сервис для публикации данных о котиках. В публикациях можно выкладывать фотографии, выбирать цвет и возраст котика.
@@ -15,7 +16,7 @@ Kittygram — сервис для публикации данных о коти�
 
 ## Клонирование проекта с GitHub на сервер:
 ```
-git clone git@github.com:Eldaar-M/infra_sprint1.git
+git clone git@github.com:Eldaar-M/kittygram_final.git
 ```
  
 ## Автор 
